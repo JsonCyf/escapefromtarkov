@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/map/map",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "逃离塔科夫",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#red",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home_unselect.png",
+      "selectedIconPath": "images/home_select.png"
+    },
+    {
+      "pagePath": "pages/map/map",
+      "text": "地图",
+      "iconPath": "images/map_unselect.png",
+      "selectedIconPath": "images/map_select.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "images/personal_unselect.png",
+      "selectedIconPath": "images/personal_select.png"
+    }]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
