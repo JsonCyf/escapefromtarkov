@@ -1,21 +1,25 @@
-// pages/home/home.js
+// pages/npcitem/npcitem.js
 Page({
-//require('../../images/home_select.png')
+
   /**
    * 页面的初始数据
    */
   data: {
-    itemList:[{title:'任务攻略' ,imgSrc:'../../images/home_select.png',url:"/pages/npcitem/npcitem"},
-    {title:'任务物品',imgSrc:'../../images/home_select.png',url:"/pages/luckdraw/luckdraw"},
-    {title:'子弹数据',imgSrc:'../../images/home_select.png',url:"/pages/luckdraw/luckdraw"}] ,
-
+      itemList:[{title:'PraPor',imgSrc:'../../images/PraPor.jpg'},
+      {title:'Therapist',imgSrc:'../../images/Therapist.jpg'},
+      {title:'Fence',imgSrc:'../../images/Fence.png'},
+      {title:'Skier',imgSrc:'../../images/Skier.jpg'},
+      {title:'Peacekeeper',imgSrc:'../../images/Peacekeeper.jpg'},
+      {title:'Mechanic',imgSrc:'../../images/Mechanic.jpg'},
+      {title:'Ragman',imgSrc:'../../images/Ragman.jpg'},
+      {title:'Jaeger',imgSrc:'../../images/Jaeger.jpg'}],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.error("onLoad");
+    console.log(options);
   },
 
   /**
@@ -65,5 +69,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
+  }
 })

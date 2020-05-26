@@ -1,0 +1,4 @@
+/* pages/npcitem/npcitem.wxss */
+.itemTv{
+  font-size: 12px;
+}

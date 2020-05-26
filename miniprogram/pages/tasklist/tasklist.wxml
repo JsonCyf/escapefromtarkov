@@ -1,0 +1,5 @@
+<!--pages/tasklist/tasklist.wxml-->
+<view>
+  <van-cell wx:for="{{taskList}}" wx:key="index" title="{{item}}" is-link />
+
+</view>

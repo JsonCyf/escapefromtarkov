@@ -1,0 +1,7 @@
+<!--pages/npcitem/npcitem.wxml-->
+<van-grid column-num="4" clickable="true">
+	<van-grid-item use-slot="true" wx:for="{{ itemList }}" wx:key="index" link-type="navigateTo" url="/pages/tasklist/tasklist?index={{index}}">
+		<image style="width: 100%; height: 80px;" src="{{item.imgSrc}}" />
+		<text class="itemTv">{{item.title}}</text>
+	</van-grid-item>
+</van-grid>

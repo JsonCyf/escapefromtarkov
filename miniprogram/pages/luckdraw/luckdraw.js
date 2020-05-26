@@ -1,13 +1,10 @@
-// pages/home/home.js
+// pages/luckdraw/luckdraw.js
 Page({
-//require('../../images/home_select.png')
+
   /**
    * 页面的初始数据
    */
   data: {
-    itemList:[{title:'任务攻略' ,imgSrc:'../../images/home_select.png',url:"/pages/npcitem/npcitem"},
-    {title:'任务物品',imgSrc:'../../images/home_select.png',url:"/pages/luckdraw/luckdraw"},
-    {title:'子弹数据',imgSrc:'../../images/home_select.png',url:"/pages/luckdraw/luckdraw"}] ,
 
   },
 
@@ -15,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.error("onLoad");
+    console.log(options);
   },
 
   /**
@@ -65,5 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
+  }
 })
