@@ -1,2 +1,11 @@
 <!--pages/taskdetails/askdetails.wxml-->
-<text>pages/taskdetails/askdetails.wxml</text>
+<view class="parent">
+  <video src="cloud://moviecloud-5qs6a.6d6f-moviecloud-5qs6a-1302189956/Quests/Prapor/partone.mp4"></video>
+  <text>以上资源来源自互联网,个人只是收集,在此感谢视频制作者,希望大家给视频制作者原视频点赞加关注</text>
+</view>
+
+  
+
+
+
+

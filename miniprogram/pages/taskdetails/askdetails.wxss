@@ -1,1 +1,13 @@
 /* pages/taskdetails/askdetails.wxss */
+.parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.parent video{
+  width: 100%;
+}
