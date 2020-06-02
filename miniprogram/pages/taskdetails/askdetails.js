@@ -6,8 +6,8 @@ Page({
    */
   data: {
     jsonData:"",
-    index:"0",
-    itemindex:"1",
+    npcIndex:"-1",
+    taskIndex:"-1",
     taskUrl:"",
     taskName:"",
   },
@@ -19,40 +19,40 @@ Page({
     console.log("options.index:"+options.index+"   options.itemindex:"+options.itemindex);
         this.setData({
           jsonData:localData.jsonData,
-          index:options.index,
-          itemindex:options.itemindex, 
+          npcIndex:options.npcIndex,
+          taskIndex:options.taskIndex, 
         });
         // jsonData[0].id,
         // console.log("jsonData:"+this.data.jsonData[0].npcName);
         // console.log("jsonData:"+JSON.stringify(this.data.jsonData));
         var taskClss;
-        switch(this.data.index){
+        switch(this.data.npcIndex){
           case "0":
-          taskClss=this.data.jsonData[0].taskList[parseInt(this.data.itemindex)];
+          taskClss=this.data.jsonData[0].taskList[parseInt(this.data.taskIndex)];
           //  taskClss.taskNme;
           //  taskClss.videoUrl;
           //  console.log("taskClss.taskNme:"+taskClss.taskNme+"   taskClss.videoUrl:"+taskClss.videoUrl);
           break;
           case "1":
-            taskClss=this.data.jsonData[1].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[1].taskList[parseInt(this.data.taskIndex)];
           break;
           case "2":
-            taskClss=this.data.jsonData[2].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[2].taskList[parseInt(this.data.taskIndex)];
           break;
           case "3":
-            taskClss=this.data.jsonData[3].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[3].taskList[parseInt(this.data.taskIndex)];
           break;
           case "4":
-            taskClss=this.data.jsonData[4].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[4].taskList[parseInt(this.data.taskIndex)];
           break;
           case "5":
-            taskClss=this.data.jsonData[5].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[5].taskList[parseInt(this.data.taskIndex)];
           break;
           case "6":
-            taskClss=this.data.jsonData[6].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[6].taskList[parseInt(this.data.taskIndex)];
           break;
           case "7":
-            taskClss=this.data.jsonData[7].taskList[parseInt(this.data.itemindex)];
+            taskClss=this.data.jsonData[7].taskList[parseInt(this.data.taskIndex)];
           break;
         }
         this.setData({

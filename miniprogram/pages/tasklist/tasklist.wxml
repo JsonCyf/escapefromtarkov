@@ -1,6 +1,6 @@
 <!--pages/tasklist/tasklist.wxml-->
 <!-- index:{{index}},item:{{itemindex}} -->
 <view>
-  <van-cell wx:for="{{taskList}}" wx:key="index" title="{{item}}" is-link url="/pages/taskdetails/askdetails?itemindex={{itemindex}}&index={{index}}" />
+  <van-cell wx:for="{{taskList}}" wx:key="index" title="{{item}}" is-link url="/pages/taskdetails/askdetails?npcIndex={{npcIndex}}&taskIndex={{index}}" />
 
 </view>

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    itemindex: -1,
+    npcIndex: -1,
     taskList: [],
     praporList: ["首秀", "考验", "硝烟野餐", "往事速递", "罪证", "冰淇淋蛋筒", "邮递特派员 Part.1",
       "探囊取物", "石油存储", "惩罚者 Part.1", "惩罚者 Part.2", "惩罚者 Part.3",
@@ -44,9 +44,9 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      itemindex: options.index,
+      npcIndex: options.npcIndex,
     });
-    switch (this.data.itemindex) {
+    switch (this.data.npcIndex) {
       case "0":
         this.setData({
           taskList: this.data.praporList
