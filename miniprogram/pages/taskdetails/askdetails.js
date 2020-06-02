@@ -1,20 +1,64 @@
 // pages/taskdetails/askdetails.js
+var localData = require("../../data/task.js")
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    jsonData:"",
+    index:"0",
+    itemindex:"1",
+    taskUrl:"",
+    taskName:"",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-        options.itemindex;
-        options.index;
-        console.log("itemindex:"+options.itemindex+" , index:"+options.index);
+    console.log("options.index:"+options.index+"   options.itemindex:"+options.itemindex);
+        this.setData({
+          jsonData:localData.jsonData,
+          index:options.index,
+          itemindex:options.itemindex, 
+        });
+        // jsonData[0].id,
+        // console.log("jsonData:"+this.data.jsonData[0].npcName);
+        // console.log("jsonData:"+JSON.stringify(this.data.jsonData));
+        var taskClss;
+        switch(this.data.index){
+          case "0":
+          taskClss=this.data.jsonData[0].taskList[parseInt(this.data.itemindex)];
+          //  taskClss.taskNme;
+          //  taskClss.videoUrl;
+          //  console.log("taskClss.taskNme:"+taskClss.taskNme+"   taskClss.videoUrl:"+taskClss.videoUrl);
+          break;
+          case "1":
+            taskClss=this.data.jsonData[1].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "2":
+            taskClss=this.data.jsonData[2].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "3":
+            taskClss=this.data.jsonData[3].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "4":
+            taskClss=this.data.jsonData[4].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "5":
+            taskClss=this.data.jsonData[5].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "6":
+            taskClss=this.data.jsonData[6].taskList[parseInt(this.data.itemindex)];
+          break;
+          case "7":
+            taskClss=this.data.jsonData[7].taskList[parseInt(this.data.itemindex)];
+          break;
+        }
+        this.setData({
+          taskName:taskClss.taskNme,
+          taskUrl:taskClss.videoUrl,
+        });
   },
 
   /**

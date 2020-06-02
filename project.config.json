@@ -65,10 +65,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "pages/taskdetails/askdetails",
 					"pathName": "pages/taskdetails/askdetails",
-					"query": "index=0",
+					"query": "index=7&itemindex=1",
 					"scene": null
 				}
 			]
